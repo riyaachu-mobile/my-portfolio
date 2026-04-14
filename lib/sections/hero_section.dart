@@ -5,13 +5,15 @@ import '../constants/app_colors.dart';
 import '../constants/app_text_styles.dart';
 
 Future<void> _launchResume() async {
-  // Build absolute URL from current page base so url_launcher resolves it correctly on web
-  final uri = Uri.base.replace(path: '/resume.pdf', query: '');
+  // Use absolute path for deployed environment
+  final uri = Uri.parse('resume.pdf');
   await launchUrl(uri, webOnlyWindowName: '_blank');
 }
 
 Future<void> _launchLinkedIn() async {
-  final uri = Uri.parse('https://www.linkedin.com/in/riya-achu-thomas');
+  final uri = Uri.parse(
+    'https://www.linkedin.com/in/riya-achu-thomas-4bb223147/',
+  );
   await launchUrl(uri, webOnlyWindowName: '_blank');
 }
 

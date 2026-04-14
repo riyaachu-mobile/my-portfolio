@@ -24,7 +24,7 @@ class ContactSection extends StatelessWidget {
           // Header
           Column(
                 children: [
-                  Text('05. CONTACT', style: AppTextStyles.monoMedium),
+                  Text('04. CONTACT', style: AppTextStyles.monoMedium),
                   const SizedBox(height: 12),
                   Text(
                     "Let's Work Together",
